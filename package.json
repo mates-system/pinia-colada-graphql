@@ -1,0 +1,29 @@
+{
+  "name": "pinia-colada-graphql",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "bun run --filter './packages/*' build",
+    "dev": "bun run --filter example dev",
+    "typecheck": "oxlint --type-check .",
+    "lint": "oxlint --type-aware .",
+    "lint:fix": "oxlint --type-aware --fix .",
+    "fmt": "oxfmt",
+    "fmt:fix": "oxfmt --write"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@types/bun": "^1.2.13",
+    "oxfmt": "^0.27.0",
+    "oxlint": "^1.42.0",
+    "oxlint-tsgolint": "^0.11.2",
+    "example": "workspace:*",
+    "tsdown": "^0.20.1",
+    "typescript": "~5.9.3",
+    "vue": "^3.5.27"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@pinia-colada-graphql/core": "workspace:*",
+    "@pinia-colada-graphql/tagged-template": "workspace:*",
+    "@pinia/colada": "^0.21.2",
+    "graphql": "^16.11.0",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.27"
+  },
+  "devDependencies": {
+    "@pinia-colada-graphql/unplugin": "workspace:*",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0-beta.10",
+    "vue-tsc": "^2.2.0"
+  }
+}

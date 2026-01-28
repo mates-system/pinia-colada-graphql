@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "GraphQL (Vue)",
+  "scopeName": "inline.graphql.vue",
+  "injectionSelector": "L:source.vue",
+  "patterns": [
+    {
+      "begin": "(<)(graphql)(>)",
+      "end": "(</)(graphql)(>)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.graphql.vue"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.graphql.vue"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "contentName": "meta.embedded.block.graphql",
+      "patterns": [
+        {
+          "include": "source.graphql"
+        }
+      ]
+    }
+  ]
+}

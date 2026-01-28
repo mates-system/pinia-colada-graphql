@@ -1,0 +1,27 @@
+{
+  "name": "@pinia-colada-graphql/tagged-template",
+  "version": "0.0.1",
+  "description": "GraphQL tagged template literal support for pinia-colada-graphql",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "graphql": "^16.11.0"
+  },
+  "peerDependencies": {
+    "graphql": "^16.0.0"
+  }
+}

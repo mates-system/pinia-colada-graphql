@@ -1,0 +1,40 @@
+{
+  "name": "@pinia-colada-graphql/unplugin",
+  "version": "0.0.1",
+  "description": "GraphQL file loader and type generation for pinia-colada-graphql",
+  "files": [
+    "dist",
+    "src/client.d.ts"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.mts",
+      "import": "./dist/vite.mjs"
+    },
+    "./client": {
+      "types": "./src/client.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.5.0",
+    "unplugin": "^2.3.6"
+  },
+  "devDependencies": {
+    "graphql": "^16.11.0",
+    "vite": "^6.3.5"
+  },
+  "peerDependencies": {
+    "graphql": "^16.0.0"
+  }
+}

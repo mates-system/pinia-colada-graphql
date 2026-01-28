@@ -1,0 +1,45 @@
+{
+  "name": "pinia-colada-graphql-vscode",
+  "displayName": "Pinia Colada GraphQL",
+  "description": "GraphQL fragment colocation for Vue SFCs",
+  "version": "0.0.1",
+  "publisher": "pinia-colada-graphql",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/pinia-colada-graphql"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "inline.graphql.vue",
+        "path": "./syntaxes/graphql-vue.tmLanguage.json",
+        "injectTo": [
+          "source.vue"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.graphql": "graphql"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsdown src/extension.ts --format cjs --outDir dist",
+    "watch": "tsdown src/extension.ts --format cjs --outDir dist --watch",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "tsdown": "^0.11.0",
+    "typescript": "~5.9.3"
+  }
+}

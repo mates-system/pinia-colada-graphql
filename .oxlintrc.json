@@ -1,0 +1,37 @@
+{
+  "$schema": "https://oxc.rs/schemas/oxlintrc.json",
+  "plugins": ["typescript", "unicorn", "import"],
+  "env": {
+    "browser": true,
+    "es2024": true,
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "typescript/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "unicorn/prefer-node-protocol": "error",
+    "import/no-duplicates": "error"
+  },
+  "settings": {
+    "jsx": {
+      "runtime": "automatic"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.vue"],
+      "rules": {
+        "typescript/no-unused-vars": "off"
+      }
+    }
+  ],
+  "ignorePatterns": ["node_modules", "dist", "__ubugeeei__"]
+}

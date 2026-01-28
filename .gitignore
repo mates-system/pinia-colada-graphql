@@ -1,0 +1,30 @@
+# Dependencies
+node_modules
+.bun
+
+# Build outputs
+dist
+*.tsbuildinfo
+
+# IDE
+.vscode
+.idea
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache
+.turbo
+
+# Reference repos (for development only)
+__ubugeeei__

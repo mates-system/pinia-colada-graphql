@@ -1,0 +1,20 @@
+{
+  "$schema": "https://oxc.rs/schemas/oxfmtrc.json",
+  // General formatting options
+  "indentStyle": "space",
+  "indentWidth": 2,
+  "lineWidth": 100,
+  "endOfLine": "lf",
+  // Quotes
+  "quoteStyle": "double",
+  "jsxQuoteStyle": "double",
+  "quoteProps": "as-needed",
+  // Semicolons and trailing commas
+  "semicolons": "as-needed",
+  "trailingCommas": "all",
+  // Brackets
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  // Arrow functions
+  "arrowParens": "always",
+}

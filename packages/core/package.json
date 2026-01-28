@@ -1,0 +1,33 @@
+{
+  "name": "@pinia-colada-graphql/core",
+  "version": "0.0.1",
+  "description": "GraphQL integration for Pinia Colada with normalized cache",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "@pinia/colada": "^0.21.2",
+    "graphql": "^16.11.0",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.27"
+  },
+  "peerDependencies": {
+    "@pinia/colada": "^0.21.0",
+    "graphql": "^16.0.0",
+    "pinia": "^2.2.6 || ^3.0.0",
+    "vue": "^3.5.0"
+  }
+}
